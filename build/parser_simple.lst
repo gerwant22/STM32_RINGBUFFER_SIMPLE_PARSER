@@ -1,0 +1,291 @@
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"parser_simple.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Parser_TakeLine,"ax",%progbits
+  20              		.align	1
+  21              		.global	Parser_TakeLine
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	Parser_TakeLine:
+  27              	.LVL0:
+  28              	.LFB130:
+  29              		.file 1 "Core/Src/parser_simple.c"
+   1:Core/Src/parser_simple.c **** /*
+   2:Core/Src/parser_simple.c ****  * parser_simple.c
+   3:Core/Src/parser_simple.c ****  *
+   4:Core/Src/parser_simple.c ****  *  Created on: 18 lis 2022
+   5:Core/Src/parser_simple.c ****  *      Author: gerwant22
+   6:Core/Src/parser_simple.c ****  */
+   7:Core/Src/parser_simple.c **** #include "main.h"
+   8:Core/Src/parser_simple.c **** #include "ring_buffer.h"
+   9:Core/Src/parser_simple.c **** #include "parser_simple.h"
+  10:Core/Src/parser_simple.c **** #include "string.h"
+  11:Core/Src/parser_simple.c **** 
+  12:Core/Src/parser_simple.c **** void Parser_TakeLine(RingBuffer_t *Buf, uint8_t *Destination)
+  13:Core/Src/parser_simple.c **** {
+  30              		.loc 1 13 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 8
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 13 1 is_stmt 0 view .LVU1
+  35 0000 70B5     		push	{r4, r5, r6, lr}
+  36              		.cfi_def_cfa_offset 16
+  37              		.cfi_offset 4, -16
+  38              		.cfi_offset 5, -12
+  39              		.cfi_offset 6, -8
+  40              		.cfi_offset 14, -4
+  41 0002 82B0     		sub	sp, sp, #8
+  42              		.cfi_def_cfa_offset 24
+  43 0004 0646     		mov	r6, r0
+  44 0006 0D46     		mov	r5, r1
+  14:Core/Src/parser_simple.c ****     uint8_t Tmp;
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 2
+
+
+  45              		.loc 1 14 5 is_stmt 1 view .LVU2
+  15:Core/Src/parser_simple.c ****     uint8_t i = 0;
+  46              		.loc 1 15 5 view .LVU3
+  47              	.LVL1:
+  48              		.loc 1 15 13 is_stmt 0 view .LVU4
+  49 0008 0024     		movs	r4, #0
+  50 000a 06E0     		b	.L4
+  51              	.LVL2:
+  52              	.L2:
+  16:Core/Src/parser_simple.c ****     do
+  17:Core/Src/parser_simple.c ****     {
+  18:Core/Src/parser_simple.c ****         RB_Read(Buf, &Tmp);
+  19:Core/Src/parser_simple.c ****         if (Tmp == ENDLINE)
+  20:Core/Src/parser_simple.c ****         {
+  21:Core/Src/parser_simple.c ****             Destination[i] = 0;
+  22:Core/Src/parser_simple.c ****         }
+  23:Core/Src/parser_simple.c ****         else
+  24:Core/Src/parser_simple.c ****         {
+  25:Core/Src/parser_simple.c ****             Destination[i] = Tmp;
+  53              		.loc 1 25 13 is_stmt 1 view .LVU5
+  54              		.loc 1 25 28 is_stmt 0 view .LVU6
+  55 000c 2B55     		strb	r3, [r5, r4]
+  56              	.L3:
+  26:Core/Src/parser_simple.c ****         }
+  27:Core/Src/parser_simple.c **** 
+  28:Core/Src/parser_simple.c ****         i++;
+  57              		.loc 1 28 9 is_stmt 1 view .LVU7
+  58              		.loc 1 28 10 is_stmt 0 view .LVU8
+  59 000e 0134     		adds	r4, r4, #1
+  60              	.LVL3:
+  61              		.loc 1 28 10 view .LVU9
+  62 0010 E4B2     		uxtb	r4, r4
+  63              	.LVL4:
+  29:Core/Src/parser_simple.c ****     } while (Tmp != ENDLINE);
+  64              		.loc 1 29 18 is_stmt 1 view .LVU10
+  65 0012 9DF80730 		ldrb	r3, [sp, #7]	@ zero_extendqisi2
+  66 0016 0A2B     		cmp	r3, #10
+  67 0018 0BD0     		beq	.L6
+  68              	.LVL5:
+  69              	.L4:
+  16:Core/Src/parser_simple.c ****     do
+  70              		.loc 1 16 5 view .LVU11
+  18:Core/Src/parser_simple.c ****         if (Tmp == ENDLINE)
+  71              		.loc 1 18 9 view .LVU12
+  72 001a 0DF10701 		add	r1, sp, #7
+  73 001e 3046     		mov	r0, r6
+  74 0020 FFF7FEFF 		bl	RB_Read
+  75              	.LVL6:
+  19:Core/Src/parser_simple.c ****         {
+  76              		.loc 1 19 9 view .LVU13
+  19:Core/Src/parser_simple.c ****         {
+  77              		.loc 1 19 17 is_stmt 0 view .LVU14
+  78 0024 9DF80730 		ldrb	r3, [sp, #7]	@ zero_extendqisi2
+  19:Core/Src/parser_simple.c ****         {
+  79              		.loc 1 19 12 view .LVU15
+  80 0028 0A2B     		cmp	r3, #10
+  81 002a EFD1     		bne	.L2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 3
+
+
+  21:Core/Src/parser_simple.c ****         }
+  82              		.loc 1 21 13 is_stmt 1 view .LVU16
+  21:Core/Src/parser_simple.c ****         }
+  83              		.loc 1 21 28 is_stmt 0 view .LVU17
+  84 002c 0023     		movs	r3, #0
+  85 002e 2B55     		strb	r3, [r5, r4]
+  86 0030 EDE7     		b	.L3
+  87              	.L6:
+  30:Core/Src/parser_simple.c **** }
+  88              		.loc 1 30 1 view .LVU18
+  89 0032 02B0     		add	sp, sp, #8
+  90              		.cfi_def_cfa_offset 16
+  91              		@ sp needed
+  92 0034 70BD     		pop	{r4, r5, r6, pc}
+  93              		.loc 1 30 1 view .LVU19
+  94              		.cfi_endproc
+  95              	.LFE130:
+  97              		.section	.rodata.Parser_Parse.str1.4,"aMS",%progbits,1
+  98              		.align	2
+  99              	.LC0:
+ 100 0000 4C45445F 		.ascii	"LED_ON\000"
+ 100      4F4E00
+ 101 0007 00       		.align	2
+ 102              	.LC1:
+ 103 0008 5475726E 		.ascii	"Turn ON LED\012\015\000"
+ 103      204F4E20 
+ 103      4C45440A 
+ 103      0D00
+ 104 0016 0000     		.align	2
+ 105              	.LC2:
+ 106 0018 4C45445F 		.ascii	"LED_OFF\000"
+ 106      4F464600 
+ 107              		.align	2
+ 108              	.LC3:
+ 109 0020 5475726E 		.ascii	"Turn OFF LED\012\015\000"
+ 109      204F4646 
+ 109      204C4544 
+ 109      0A0D00
+ 110              		.section	.text.Parser_Parse,"ax",%progbits
+ 111              		.align	1
+ 112              		.global	Parser_Parse
+ 113              		.syntax unified
+ 114              		.thumb
+ 115              		.thumb_func
+ 117              	Parser_Parse:
+ 118              	.LVL7:
+ 119              	.LFB131:
+  31:Core/Src/parser_simple.c **** void Parser_Parse(uint8_t *DataToParse)
+  32:Core/Src/parser_simple.c **** {
+ 120              		.loc 1 32 1 is_stmt 1 view -0
+ 121              		.cfi_startproc
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		.loc 1 32 1 is_stmt 0 view .LVU21
+ 125 0000 10B5     		push	{r4, lr}
+ 126              		.cfi_def_cfa_offset 8
+ 127              		.cfi_offset 4, -8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 4
+
+
+ 128              		.cfi_offset 14, -4
+ 129 0002 0446     		mov	r4, r0
+  33:Core/Src/parser_simple.c ****     // LED_ON
+  34:Core/Src/parser_simple.c ****     if (strcmp("LED_ON", (char *)DataToParse) == 0)
+ 130              		.loc 1 34 5 is_stmt 1 view .LVU22
+ 131              		.loc 1 34 9 is_stmt 0 view .LVU23
+ 132 0004 0146     		mov	r1, r0
+ 133 0006 0E48     		ldr	r0, .L13
+ 134              	.LVL8:
+ 135              		.loc 1 34 9 view .LVU24
+ 136 0008 FFF7FEFF 		bl	strcmp
+ 137              	.LVL9:
+ 138              		.loc 1 34 8 view .LVU25
+ 139 000c 28B1     		cbz	r0, .L11
+  35:Core/Src/parser_simple.c ****     {
+  36:Core/Src/parser_simple.c ****         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+  37:Core/Src/parser_simple.c ****         UartLog("Turn ON LED\n\r");
+  38:Core/Src/parser_simple.c ****     }
+  39:Core/Src/parser_simple.c ****     // LED_OFF
+  40:Core/Src/parser_simple.c ****     else if (strcmp("LED_OFF", (char *)DataToParse) == 0)
+ 140              		.loc 1 40 10 is_stmt 1 view .LVU26
+ 141              		.loc 1 40 14 is_stmt 0 view .LVU27
+ 142 000e 2146     		mov	r1, r4
+ 143 0010 0C48     		ldr	r0, .L13+4
+ 144 0012 FFF7FEFF 		bl	strcmp
+ 145              	.LVL10:
+ 146              		.loc 1 40 13 view .LVU28
+ 147 0016 48B1     		cbz	r0, .L12
+ 148              	.L7:
+  41:Core/Src/parser_simple.c ****     {
+  42:Core/Src/parser_simple.c ****         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+  43:Core/Src/parser_simple.c ****         UartLog("Turn OFF LED\n\r");
+  44:Core/Src/parser_simple.c ****     }
+  45:Core/Src/parser_simple.c **** }...
+ 149              		.loc 1 45 1 view .LVU29
+ 150 0018 10BD     		pop	{r4, pc}
+ 151              	.LVL11:
+ 152              	.L11:
+ 153              	.LBB2:
+  36:Core/Src/parser_simple.c ****         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 154              		.loc 1 36 9 is_stmt 1 view .LVU30
+ 155 001a 0122     		movs	r2, #1
+ 156 001c 2021     		movs	r1, #32
+ 157 001e 0A48     		ldr	r0, .L13+8
+ 158 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 159              	.LVL12:
+  37:Core/Src/parser_simple.c ****         UartLog("Turn ON LED\n\r");
+ 160              		.loc 1 37 9 view .LVU31
+ 161 0024 0948     		ldr	r0, .L13+12
+ 162 0026 FFF7FEFF 		bl	UartLog
+ 163              	.LVL13:
+ 164              	.LBE2:
+ 165 002a F5E7     		b	.L7
+ 166              	.L12:
+ 167              	.LBB3:
+  42:Core/Src/parser_simple.c ****         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 168              		.loc 1 42 9 view .LVU32
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 5
+
+
+ 169 002c 0022     		movs	r2, #0
+ 170 002e 2021     		movs	r1, #32
+ 171 0030 0548     		ldr	r0, .L13+8
+ 172 0032 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 173              	.LVL14:
+  43:Core/Src/parser_simple.c ****         UartLog("Turn OFF LED\n\r");
+ 174              		.loc 1 43 9 view .LVU33
+ 175 0036 0648     		ldr	r0, .L13+16
+ 176 0038 FFF7FEFF 		bl	UartLog
+ 177              	.LVL15:
+ 178              	.LBE3:
+ 179              		.loc 1 45 1 is_stmt 0 view .LVU34
+ 180 003c ECE7     		b	.L7
+ 181              	.L14:
+ 182 003e 00BF     		.align	2
+ 183              	.L13:
+ 184 0040 00000000 		.word	.LC0
+ 185 0044 18000000 		.word	.LC2
+ 186 0048 00000240 		.word	1073872896
+ 187 004c 08000000 		.word	.LC1
+ 188 0050 20000000 		.word	.LC3
+ 189              		.cfi_endproc
+ 190              	.LFE131:
+ 192              		.text
+ 193              	.Letext0:
+ 194              		.file 2 "c:\\users\\danie\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
+ 195              		.file 3 "c:\\users\\danie\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
+ 196              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
+ 197              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 198              		.file 6 "Core/Inc/ring_buffer.h"
+ 199              		.file 7 "c:\\users\\danie\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 parser_simple.c
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:20     .text.Parser_TakeLine:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:26     .text.Parser_TakeLine:0000000000000000 Parser_TakeLine
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:98     .rodata.Parser_Parse.str1.4:0000000000000000 $d
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:111    .text.Parser_Parse:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:117    .text.Parser_Parse:0000000000000000 Parser_Parse
+C:\Users\danie\AppData\Local\Temp\ccDbDnFF.s:184    .text.Parser_Parse:0000000000000040 $d
+
+UNDEFINED SYMBOLS
+RB_Read
+strcmp
+HAL_GPIO_WritePin
+UartLog
