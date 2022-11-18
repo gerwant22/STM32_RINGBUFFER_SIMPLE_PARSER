@@ -9,6 +9,8 @@
 #include "parser_simple.h"
 #include "utils.h"
 #include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
 
 void Parser_TakeLine(RingBuffer_t *Buf, uint8_t *Destination)
 {
@@ -61,6 +63,48 @@ static void Parse_ParseLED()
         }
     }
 }
+// ENV=
+//      x,y,z
+static void Parse_ParseENV()
+{
+    uint8_t i, j;
+    float EnvParameters[3];
+    char Message[32];
+
+    for (i = 0; i < 3; i++)
+    {
+        char *ParsePointer = strtok(NULL, ",");
+        if (strlen(ParsePointer) > 0)
+        {
+            // X.XX
+            // Y.YY
+            // Z.ZZ
+            for (j = 0; ParsePointer[j] != 0; j++)
+            {
+                if ((ParsePointer[0] < '0' || ParsePointer[0] > '9') && (ParsePointer[0] == '.'))
+                {
+                    UartLog("ENV wrong value!\n\r");
+                    return;
+                }
+            }
+            // atof - asci to float
+            EnvParameters[i] = atof(ParsePointer);
+        }
+        else
+        {
+            UartLog("ENV too less values. ENV=X,Y,Z!\n\r");
+            return;
+        }
+    }
+    sprintf(Message, "Temperature: %.1f\n\r", EnvParameters[0]);
+    UartLog(Message);
+
+    sprintf(Message, "Humidity: %.1f\n\r", EnvParameters[1]);
+    UartLog(Message);
+
+    sprintf(Message, "Presure: %.1f\n\r", EnvParameters[2]);
+    UartLog(Message);
+}
 
 void Parser_Parse(uint8_t *DataToParse)
 {
@@ -71,5 +115,11 @@ void Parser_Parse(uint8_t *DataToParse)
     if (strcmp("LED", ParsePointer) == 0)
     {
         Parse_ParseLED();
+    }
+
+    // ENV
+    if (strcmp("ENV", ParsePointer) == 0)
+    {
+        Parse_ParseENV();
     }
 }

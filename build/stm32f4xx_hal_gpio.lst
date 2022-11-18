@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
   27:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   Subject to the specific hardware characteristics of each I/O port listed in the datasheet, each
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   port bit of the General Purpose IO (GPIO) Ports, can be individually configured by software
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   in several modes:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 2
 
 
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   (+) Input mode 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
   84:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****             
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****     (#) To set/reset the level of a pin configured in output mode use 
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         HAL_GPIO_WritePin()/HAL_GPIO_TogglePin().
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 3
 
 
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****     
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  141:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *  @brief    Initialization and Configuration functions
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** @verbatim    
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 4
 
 
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****  ===============================================================================
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
   49 0008 70B5     		push	{r4, r5, r6, lr}
   50              		.cfi_def_cfa_offset 16
   51              		.cfi_offset 4, -16
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 5
 
 
   52              		.cfi_offset 5, -12
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  199:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         /* Configure the IO Output Type */
  200:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp = GPIOx->OTYPER;
   85              		.loc 1 200 9 is_stmt 1 view .LVU25
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 6
 
 
   86              		.loc 1 200 14 is_stmt 0 view .LVU26
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  116 0040 50F82420 		ldr	r2, [r0, r4, lsl #2]
  117              	.LVL11:
  225:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp &= ~(0xFU << ((uint32_t)(position & 0x07U) * 4U)) ;
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 7
 
 
  118              		.loc 1 225 9 is_stmt 1 view .LVU40
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  152              		.loc 1 245 14 discriminator 20 view .LVU54
  153 006e 2A43     		orrs	r2, r2, r5
  154              	.LVL15:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 8
 
 
  246:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         SYSCFG->EXTICR[position >> 2U] = temp;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  195              		.loc 1 259 9 is_stmt 1 view .LVU73
  196              		.loc 1 259 11 is_stmt 0 view .LVU74
  197 009a 4E68     		ldr	r6, [r1, #4]
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 9
 
 
  198 009c 16F4001F 		tst	r6, #2097152
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  236              		.loc 1 275 14 is_stmt 0 view .LVU92
  237 00c2 2240     		ands	r2, r2, r4
  238              	.LVL27:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 10
 
 
  276:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         if((GPIO_Init->Mode & EXTI_IT) != 0x00U)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  188:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****           (GPIO_Init->Mode & GPIO_MODE) == MODE_AF)
  279              		.loc 1 188 7 is_stmt 1 view .LVU109
  188:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****           (GPIO_Init->Mode & GPIO_MODE) == MODE_AF)
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 11
 
 
  280              		.loc 1 188 21 is_stmt 0 view .LVU110
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  317 010e AA40     		lsls	r2, r2, r5
  214:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         GPIOx->PUPDR = temp;
  318              		.loc 1 214 14 view .LVU128
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 12
 
 
  319 0110 2243     		orrs	r2, r2, r4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  356 0138 2243     		orrs	r2, r2, r4
  357              	.LVL41:
  234:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 13
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 13
 
 
  358              		.loc 1 234 7 is_stmt 1 view .LVU146
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  397 0166 03F0030E 		and	lr, r3, #3
  244:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         temp |= ((uint32_t)(GPIO_GET_INDEX(GPIOx)) << (4U * (position & 0x03U)));
  398              		.loc 1 244 32 view .LVU162
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 14
 
 
  399 016a 4FEA8E0E 		lsl	lr, lr, #2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  442 01b0 5BE7     		b	.L7
  443              	.LVL48:
  444              	.L22:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 15
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 15
 
 
  281:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****       }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  484              		.loc 1 297 3 view .LVU178
  298:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   uint32_t iocurrent = 0x00U;
  485              		.loc 1 298 3 view .LVU179
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 16
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 16
 
 
  299:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   uint32_t tmp = 0x00U;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  318:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****       {
  319:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         /* Clear EXTI line configuration */
  320:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         EXTI->IMR &= ~((uint32_t)iocurrent);
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 17
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 17
 
 
  321:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         EXTI->EMR &= ~((uint32_t)iocurrent);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  551              		.loc 1 343 7 is_stmt 1 view .LVU203
  552              		.loc 1 343 22 is_stmt 0 view .LVU204
  553 0050 4468     		ldr	r4, [r0, #4]
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 18
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 18
 
 
  554 0052 24EA0202 		bic	r2, r4, r2
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  593              		.loc 1 316 7 is_stmt 1 view .LVU219
  316:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****       if(tmp == ((uint32_t)(GPIO_GET_INDEX(GPIOx)) << (4U * (position & 0x03U))))
  594              		.loc 1 316 40 is_stmt 0 view .LVU220
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 19
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 19
 
 
  595 0082 03F0030C 		and	ip, r3, #3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  638              		.loc 1 320 9 is_stmt 1 view .LVU231
  320:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****         EXTI->EMR &= ~((uint32_t)iocurrent);
  639              		.loc 1 320 19 is_stmt 0 view .LVU232
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 20
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 20
 
 
  640 00c8 104C     		ldr	r4, .L46+8
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  680              		.cfi_restore 4
  681              		.cfi_restore 5
  682              		.cfi_restore 6
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 21
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 21
 
 
  683              		.cfi_restore 7
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  711              		.loc 1 377 3 view .LVU247
  378:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
  379:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   /* Check the parameters */
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 22
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 22
 
 
  380:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   assert_param(IS_GPIO_PIN(GPIO_Pin));
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  403:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *          This parameter can be one of GPIO_PIN_x where x can be (0..15).
  404:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @param  PinState specifies the value to be written to the selected bit.
  405:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *          This parameter can be one of the GPIO_PinState enum values:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 23
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 23
 
 
  406:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *            @arg GPIO_PIN_RESET: to clear the port pin
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  426:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** /**
  427:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @brief  Toggles the specified GPIO pins.
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @param  GPIOx Where x can be (A..K) to select the GPIO peripheral for STM32F429X device or
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 24
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 24
 
 
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *                      x can be (A..I) to select the GPIO peripheral for STM32F40XX and STM32F427
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  449:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @note   The locked registers are GPIOx_MODER, GPIOx_OTYPER, GPIOx_OSPEEDR,
  450:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *         GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH.
  451:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   * @note   The configuration of the locked GPIO pins can no longer be modified
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 25
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 25
 
 
  452:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   *         until the next reset.
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  848 0018 C369     		ldr	r3, [r0, #28]
  849              		.loc 1 474 7 view .LVU294
  850 001a 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 26
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 26
 
 
  475:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  492:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
  493:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c **** {
  494:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   /* EXTI line interrupt detected */
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 27
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 27
 
 
  495:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   if(__HAL_GPIO_EXTI_GET_IT(GPIO_Pin) != RESET)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  920 0002 054B     		ldr	r3, .L64
  921 0004 5B69     		ldr	r3, [r3, #20]
  495:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c ****   {
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 28
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 28
 
 
  922              		.loc 1 495 5 view .LVU309
@@ -1656,29 +1656,29 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 1
  951              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
  952              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  953              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s 			page 29
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s 			page 29
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f4xx_hal_gpio.c
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:20     .text.HAL_GPIO_Init:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:26     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:462    .text.HAL_GPIO_Init:00000000000001b8 $d
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:470    .text.HAL_GPIO_DeInit:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:476    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:690    .text.HAL_GPIO_DeInit:0000000000000104 $d
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:697    .text.HAL_GPIO_ReadPin:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:703    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:736    .text.HAL_GPIO_WritePin:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:742    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:772    .text.HAL_GPIO_TogglePin:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:778    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:808    .text.HAL_GPIO_LockPin:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:814    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:879    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:885    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:900    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:906    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
-C:\Users\danie\AppData\Local\Temp\cc9D6E2L.s:942    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:20     .text.HAL_GPIO_Init:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:26     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:462    .text.HAL_GPIO_Init:00000000000001b8 $d
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:470    .text.HAL_GPIO_DeInit:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:476    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:690    .text.HAL_GPIO_DeInit:0000000000000104 $d
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:697    .text.HAL_GPIO_ReadPin:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:703    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:736    .text.HAL_GPIO_WritePin:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:742    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:772    .text.HAL_GPIO_TogglePin:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:778    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:808    .text.HAL_GPIO_LockPin:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:814    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:879    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:885    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:900    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:906    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
+C:\Users\danie\AppData\Local\Temp\ccMMXXNA.s:942    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
 
 NO UNDEFINED SYMBOLS

@@ -3,5 +3,25 @@
     "cortex-debug.openocdPath": "C:\\USERS\\DANIE\\APPDATA\\ROAMING\\CODE\\USER\\GLOBALSTORAGE\\BMD.STM32-FOR-VSCODE\\@XPACK-DEV-TOOLS\\OPENOCD\\0.11.0-5.1\\.CONTENT\\BIN\\OPENOCD.EXE",
     "files.associations": {
         "parser_simple.h": "c"
-    }
+    },
+    "cSpell.words": [
+        "AHBCLK",
+        "CLOCKTYPE",
+        "Cplt",
+        "gerwant",
+        "HCLK",
+        "huart",
+        "OSCILLATORTYPE",
+        "PCLK",
+        "PLLCLK",
+        "PLLM",
+        "PLLP",
+        "PLLQ",
+        "PLLSOURCE",
+        "Presure",
+        "ringbuffer",
+        "SYSCLK",
+        "SYSCLKSOURCE",
+        "VOLTAGESCALING"
+    ]
 }

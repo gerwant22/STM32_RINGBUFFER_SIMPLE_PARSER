@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cczDjP9G.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cczDjP9G.s 			page 1
   43              	.LVL1:
   44              		.loc 1 13 3 view .LVU4
   45 0008 0A23     		movs	r3, #10
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cczDjP9G.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s 			page 2
 
 
   46 000a 82B2     		uxth	r2, r0
@@ -88,14 +88,14 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cczDjP9G.s 			page 1
   70              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
   71              		.file 9 "c:\\users\\danie\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
   72              		.file 10 "Core/Inc/usart.h"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cczDjP9G.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 utils.c
-C:\Users\danie\AppData\Local\Temp\cczDjP9G.s:20     .text.UartLog:0000000000000000 $t
-C:\Users\danie\AppData\Local\Temp\cczDjP9G.s:26     .text.UartLog:0000000000000000 UartLog
-C:\Users\danie\AppData\Local\Temp\cczDjP9G.s:58     .text.UartLog:0000000000000018 $d
+C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s:20     .text.UartLog:0000000000000000 $t
+C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s:26     .text.UartLog:0000000000000000 UartLog
+C:\Users\danie\AppData\Local\Temp\cc5S0xg8.s:58     .text.UartLog:0000000000000018 $d
 
 UNDEFINED SYMBOLS
 strlen

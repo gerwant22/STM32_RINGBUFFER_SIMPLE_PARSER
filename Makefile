@@ -94,11 +94,9 @@ CPU = -mcpu=cortex-m4
 FPU = -mfpu=fpv4-sp-d16
 
 # float-abi
-FLOAT-ABI = -mfloat-abi=hard
-
+FLOAT-ABI = -mfloat-abi=hard 
 # mcu
 MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
-
 # macros for gcc
 # AS defines
 AS_DEFS = 
